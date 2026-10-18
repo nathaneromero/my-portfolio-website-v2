@@ -16,10 +16,13 @@ export const about = [
 
 export const experience = [
   {
-    role: "Role title",
-    org: "Company or organization",
-    period: "Jun 2026 - Aug 2026",
-    points: ["What you built or did.", "A result or what you learned."],
+    role: "Software Developer Intern",
+    org: "Pointwest Innovations",
+    period: "Mar 2026 - May 2026",
+    points: ["What you built or did.", 
+             "A result or what you learned.",
+             " "
+            ],
   },
 ];
 
