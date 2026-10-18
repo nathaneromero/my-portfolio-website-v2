@@ -1,6 +1,6 @@
-# Portfolio
+# V2 of My Portfolio
 
-React + Vite portfolio, deployed to GitHub Pages.
+Made with React + Vite, deployed to GitHub Pages.
 
 ## Run locally
 ```
