@@ -1,0 +1,70 @@
+:root {
+  --bg: #ffffff;
+  --text: #1f2328;
+  --muted: #656d76;
+  --border: #d0d7de;
+  --accent: #0b5fff;
+  --good: #1a7f37;
+  --bad: #cf222e;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --text: #e6edf3;
+    --muted: #8d96a0;
+    --border: #30363d;
+    --accent: #6ea8ff;
+    --good: #3fb950;
+    --bad: #f85149;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 56px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+a { color: var(--accent); }
+main, .footer { max-width: 720px; margin: 0 auto; padding: 0 1rem; }
+
+.nav {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; gap: 1rem; overflow-x: auto; white-space: nowrap;
+  padding: 0.75rem 1rem;
+  background: var(--bg); border-bottom: 1px solid var(--border);
+}
+.nav a { text-decoration: none; color: var(--text); }
+.nav a:hover { color: var(--accent); }
+
+.hero { max-width: 720px; margin: 0 auto; padding: 3rem 1rem 1rem; }
+.hero h1 { margin: 0; font-size: clamp(2rem, 6vw, 3rem); }
+.hero p { margin: 0.25rem 0 0; color: var(--muted); font-size: 1.2rem; }
+
+.section { padding: 2rem 0; border-bottom: 1px solid var(--border); }
+.section h2 { margin-top: 0; }
+.item h3, .card h3 { margin: 0; }
+.muted { color: var(--muted); }
+.plain { list-style: none; padding: 0; }
+.plain li { margin: 0.4rem 0; }
+
+.grid { display: grid; gap: 1rem; }
+@media (min-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } }
+.card { border: 1px solid var(--border); border-radius: 8px; padding: 1rem; }
+
+.options { display: grid; gap: 0.5rem; margin: 0.75rem 0; }
+.option {
+  text-align: left; padding: 0.6rem 0.8rem; font: inherit; cursor: pointer;
+  color: var(--text); background: transparent;
+  border: 1px solid var(--border); border-radius: 6px;
+}
+.option:hover:not(:disabled) { border-color: var(--accent); }
+.option.correct { border-color: var(--good); }
+.option.wrong { border-color: var(--bad); }
+
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.footer { padding: 2rem 1rem; color: var(--muted); text-align: center; }

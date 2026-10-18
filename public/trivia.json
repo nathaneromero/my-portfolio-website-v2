@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-18",
+  "topic": "Computer Science",
+  "question": "Which data structure uses LIFO (last in, first out) ordering?",
+  "options": ["Queue", "Stack", "Linked list", "Hash table"],
+  "answer": 1,
+  "explanation": "A stack removes the most recently added item first, like a pile of plates."
+}
