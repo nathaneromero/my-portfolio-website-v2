@@ -1,5 +1,3 @@
-// All the text on your site lives here. Edit this file; the components just display it.
-
 export const profile = {
   name: "Nathan Eduard Romero",
   tagline: "Computer Science Graduate",
@@ -28,10 +26,23 @@ export const experience = [
 
 export const projects = [
   {
-    name: "Project name",
+    name: "FinInsights: Finance Management Dashboard",
     description: "One or two sentences on what it does and why you built it.",
     tech: ["React", "Python"],
-    repo: "https://github.com/your-github-username/project",
+    repo: "https://github.com/nathaneromero/finance-forecasting-dashboard",
+    demo: "",
+  },
+  {
+    name: "MV88 Ventures Inventory Management System",
+    description: "One or two sentences on what it does and why you built it.",
+    tech: ["React", "Python"],
+    repo: "https://github.com/nathaneromero/MV88Ventures-Inventory-Source",
+  },
+  {
+    name: "Dungeon Survivors Game Thesis Project",
+    description: "One or two sentences on what it does and why you built it.",
+    tech: ["React", "Python"],
+    repo: "https://github.com/nathaneromero/dungeon-survivors-source",
     demo: "",
   },
 ];

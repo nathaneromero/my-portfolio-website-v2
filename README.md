@@ -1,24 +1,27 @@
-# Portfolio
+# My Portfolio Website V2
 
-React + Vite portfolio, deployed to GitHub Pages.
+My personal portfolio as a fresh computer science graduate. It covers my experience, projects, certifications and GitHub activity.
 
-## Run locally
-```
+**Live site:** https://nathaneromero.github.io/
+
+## Features
+
+- About, experience, projects and certifications sections
+- Live GitHub activity pulled from the public GitHub API
+- Website visit counter powered by GoatCounter
+- Daily trivia card (AI-generated questions are planned)
+- Responsive layout for mobile and desktop, with light and dark mode
+- Automatic deployment on every push to `main`
+
+## Tech Stack
+
+- React and Vite
+- GoatCounter for privacy-friendly analytics
+- GitHub Actions and GitHub Pages for CI/CD and hosting
+
+## Run Locally
+
+```bash
 npm install
 npm run dev
 ```
-
-## Edit
-- All text: `src/data/content.js`
-- Styles: `src/index.css`
-- Daily trivia (placeholder for now): `public/trivia.json`
-
-## GoatCounter setup
-1. Sign up at goatcounter.com and pick a site code.
-2. Put the code in `index.html` (replace YOUR-CODE) and in `src/data/content.js`.
-3. In GoatCounter: Settings > Site > enable "Allow adding visitor counts on your website".
-
-## Deploy
-1. Push to a GitHub repo's `main` branch.
-2. Repo Settings > Pages > Source: "GitHub Actions".
-3. The workflow in `.github/workflows/deploy.yml` builds and publishes on every push.
